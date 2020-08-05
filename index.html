@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+    <title>Google.com Clone</title>
+    <style>
+       html, body {
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 12px;
+           width: 100%;
+           height: 100%;
+           margin: 0;
+           overflow: hidden;
+           
+       }
+       ul {
+           list-style: none;
+           margin:0;
+           padding: 0;
+           overflow: hidden;
+       }
+       .top-nav {
+           font-size: 13px;
+           margin: 15px; 
+       }
+       
+       li {
+           float: left;
+       }
+      
+       li a {
+           display: block;
+           color:rgb(73, 73, 73);
+           text-decoration: none;
+           padding: 10px;
+       }
+      
+       li a:hover {
+           text-decoration: underline;
+       }
+       
+       #apps {
+           opacity: 70%;
+           display: block;
+           max-height: 25px;
+           padding: 5px 15px 0 8px;
+           
+       }
+       #sign-in {
+           background-color: #2c93f3;
+           border: white;
+           border-radius: 10%;
+           color: white;
+           font-weight: bold;
+       }   
+       .topright {
+            float: right;
+       }
+       .main {
+            display: block;
+            margin:auto;
+            text-align: center;
+       }
+       #logo{
+           display: block;
+           margin: 200px auto 24px auto;
+       }
+       #search {
+           display: block;
+           margin: 10px auto 24px auto;
+           padding: 10px;
+           border-color: #cfcfcf;
+           border-width: 1px;
+           border-style: solid;
+           border-radius: 25px;
+           width: 470px;
+           height: 40px;
+       }
+       #search:hover {
+           opacity: 30%;
+           border-color: #f7f7f7;
+           box-shadow: 0 0 10px;
+       }
+       .button{
+           margin: 20px;
+       }
+       #buttons {
+           background-color: #f5f5f5;
+           color:rgb(73, 73, 73);
+           padding: 10px 20px;
+           text-align: center;
+           text-decoration: none;
+           font-size: 14px;
+           border-color: white;
+           border-width: 0;
+           border-radius: 5px;
+           margin: 0px 5px 0 5px;
+        }
+        #buttons:hover {
+            box-shadow: 0 0 2px;
+            color: black;
+        }
+        p {
+            padding: 30px;
+            font-size: 13px;
+        }
+        #francais {
+            text-decoration: none;
+        }
+        #francais:hover {
+            text-decoration: underline;
+        }
+        .location {
+            bottom: 37px;
+            position: fixed;
+            width: 100%;
+            background-color: #f3f3f3;
+            color:rgb(73, 73, 73);
+            border: 1px solid;
+            border-color: rgb(73, 73, 73, .2); 
+            border-left: 0;
+            border-width: 1 0 1 0;
+            padding: 10px;
+            font-size: 14px;
+            margin:
+        }
+        
+        .bot-nav {
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+            background-color: #f3f3f3;
+            color:rgb(73, 73, 73);
+            border-color: rgb(73, 73, 73, .2);
+            border: 0;
+            padding: 0px;
+            font-size: 14px;
+        }
+        .botright {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+            <li class="topright"><a href="#" id="sign-in">Sign in</a></li>
+            <li class="topright"><img id="apps" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png"></li>
+            <li class="topright"><a href="#">Images</a></li>
+            <li class="topright"><a href="#">Gmail</a></li>  
+        </ul>
+    </div>
+
+    <div class="main">
+        <center>
+            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <input id="search" type="search">
+        </center>
+    </div>
+    <div class="button">
+        <center>
+            <button id="buttons">Google Search</button>
+            <button id="buttons">I'm Feeling Lucky</button>            
+        </center>
+    </div>
+    <div>
+        <center>
+        <p>Google offered in: <a href="#" id="francais">Francais</a></p>
+        </center>
+    </div>
+    <div class="location">Canada</div>
+    <div class="bot-nav">
+        <ul>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search Works</a></li>
+            <li class="botright"><a href="#">Settings</a></li>
+            <li class="botright"><a href="#">Terms</a></li>
+            <li class="botright"><a href="#">Privacy</a></li>  
+        </ul>
+    </div>
+</body>
+</html>
